@@ -14,8 +14,8 @@ class UsersController < ApplicationController
       redirect_to @user #redirect_to user_url(@user)
     else
       flash[:alert] = "Complete the Fields!"
-      redirect_to signup_path
-      #render 'new'
+      #redirect_to signup_path
+      render 'new'
     end
   end
   private

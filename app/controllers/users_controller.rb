@@ -13,8 +13,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user #redirect_to user_url(@user)
     else
-      flash[:alert] = "Complete the Fields!"
-      #redirect_to signup_path
+      flash.now[:alert] = "Complete the Fields!"
       render 'new'
     end
   end
